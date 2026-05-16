@@ -1,5 +1,10 @@
+:root {
+    --cor-primaria: darkblue;
+    --cor-borda: black;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--cor-primaria);
     padding: 10px;
 }
 
@@ -10,13 +15,13 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-primaria);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--cor-borda);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -46,6 +51,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--cor-borda);
     text-align: center;
 }
