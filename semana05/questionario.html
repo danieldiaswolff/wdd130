@@ -15,19 +15,20 @@
     </header>
     <main>
         <form action="">
-            <label for="questaosigla">O que significa a sigla CSS?</label>
-            <input type="text" name="questao-sigla" id="questao-sigla">
-            <label for="questaoatributos">Como os atributos `id` e `class` são selecionados no CSS?</label>
-            <textarea name="questao-atributos" id="questao-atributos" cols="30" rows="5"></textarea>
-            <label for="questaocomentario">Qual das opções abaixo é um comentário CSS válido?</label>
-            <select name="questao-comentario" id="questao-comentario">
+            <label for="q1">O que significa a sigla CSS?</label>
+            <input type="text" name="q1" id="q1">
+            <label for="q2">Como os atributos `id` e `class` são selecionados no CSS?</label>
+            <textarea name="q2" id="q2" cols="30" rows="5"></textarea>
+            <label for="q3">Qual das opções abaixo é um comentário CSS válido?</label>
+            <select name="q3" id="q3">
                 <option value="" selected disabled>Escolha uma ...</option>
-                <option value="">&lt;!-- color: #fff --&gt;</option>
-                <option value="">/* color: #fff */</option>
-                <option value="">// color: #fff</option>
+                <option value="">&lt;!-- background-color: #fff --&gt;</option>
+                <option value="">/* background-color: #fff */</option>
+                <option value="">// background-color: #fff</option>
             </select>
-            <label for="questaomargeminferior">Qual é o margem inferior dada por esta declaração?</label>
-            <input type="number" name="questao-margem-inferior" id="questao-margem-inferior">
+            <label for="q4">Qual é a margem inferior dada por esta declaração?</label>
+            <code class="codigo-css">margin: 10px 5px 15px;</code>
+            <input type="text" name="q4" id="q4">
             <button type="submit">Enviar Quiz</button>
         </form>
     </main>

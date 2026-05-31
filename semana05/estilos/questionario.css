@@ -46,6 +46,17 @@ label {
     font-style: italic;
 }
 
+.codigo-css {
+    display: block;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 1rem;
+    padding: 12px 16px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
 button {
     background-color: rgb(58, 58, 184);
     color: #fff;
