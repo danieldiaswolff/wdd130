@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML e CSS</title>
+
+    <link rel="stylesheet" href="estilos/questionario.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quiz HTML e CSS</h1>
+    </header>
+    <main>
+        <form action="">
+            <label for="questaosigla">O que significa a sigla CSS?</label>
+            <input type="text" name="questao-sigla" id="questao-sigla">
+            <label for="questaoatributos">Como os atributos `id` e `class` são selecionados no CSS?</label>
+            <textarea name="questao-atributos" id="questao-atributos" cols="30" rows="5"></textarea>
+            <label for="questaocomentario">Qual das opções abaixo é um comentário CSS válido?</label>
+            <select name="questao-comentario" id="questao-comentario">
+                <option value="" selected disabled>Escolha uma ...</option>
+                <option value="">&lt;!-- color: #fff --&gt;</option>
+                <option value="">/* color: #fff */</option>
+                <option value="">// color: #fff</option>
+            </select>
+            <label for="questaomargeminferior">Qual é o margem inferior dada por esta declaração?</label>
+            <input type="number" name="questao-margem-inferior" id="questao-margem-inferior">
+            <button type="submit">Enviar Quiz</button>
+        </form>
+    </main>
+</body>
+
+</html>
