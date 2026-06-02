@@ -80,19 +80,19 @@ header nav a:hover {
     background-color: var(--cor-destaque2);
 }
 
-.socialmedia {
+.redes-sociais {
     display: flex;
     gap: 15px;
     margin: 0;
     padding: 0.5rem;
 }
 
-.socialmedia a {
+.redes-sociais a {
     text-decoration: none;
     display: block;
 }
 
-.socialmedia img {
+.redes-sociais img {
     width: 40px;
     height: 40px;
     background-color: var(--cor-branco);
