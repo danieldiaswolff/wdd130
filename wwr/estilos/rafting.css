@@ -206,3 +206,185 @@ footer p {
     display: block;
     flex-shrink: 0;
 }
+
+.informacoes-de-contato {
+    text-align: center;
+    margin: 40px 16px 20px;
+}
+
+.informacoes-de-contato h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.detalhes-da-empresa address {
+    font-style: normal;
+    font-size: 1em;
+}
+
+.detalhes-da-empresa a {
+    color: var(--cor-destaque1);
+    text-decoration: none;
+}
+
+.detalhes-da-empresa a:hover {
+    text-decoration: underline;
+}
+
+.layout-de-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 40px 16px;
+    align-items: start;
+}
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa-container iframe {
+    max-width: 400px;
+    border: 2px solid var(--cor-destaque1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-de-contato {
+    padding: 0;
+}
+
+.formulario .campo-nome, .formulario .campo-email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 16px;
+}
+
+.formulario .campo-radio {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: start;
+}
+
+.formulario .opcoes-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.formulario .opcoes-radio label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.formulario .campo-mensagem {
+    margin-bottom: 16px;
+}
+
+.formulario .campo-mensagem label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--cor-destaque1);
+}
+
+.formulario .campo-checkbox {
+    margin-bottom: 16px;
+}
+
+.formulario .campo-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cor-destaque1);
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #333;
+    font-family: var(--font-body);
+    font-size: 1em;
+    background-color: var(--cor-branco);
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    color: #aaa;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e0e0e0;
+    color: var(--cor-destaque1);
+    border: 1px solid #333;
+    font-size: 1em;
+    font-family: var(--font-body);
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #d0d0d0;
+}
+
+.equipe-de-contato {
+    margin: 40px 16px;
+}
+
+.equipe-de-contato h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.perfis-de-contato {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.perfis-de-contato figure {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.perfis-de-contato img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid var(--cor-secundaria);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.perfis-de-contato figcaption {
+    margin-top: 15px;
+    font-size: 1em;
+    color: var(--cor-destaque1);
+    font-weight: bold;
+}
+
+.perfis-de-contato figcaption span {
+    display: block;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: var(--cor-destaque1);
+    margin-top: 5px;
+}

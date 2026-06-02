@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a Rafting Aventuras para agendar seu passeio de rafting.">
+    <meta name="author" content="Daniel Dias Wolff">
+    <link rel="stylesheet" href="estilos/rafting.css">
+    <title>Contato | Rafting Aventuras</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo_rafting.png" alt="Logo Rafting">
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+    <main>
+        <section class="informacoes-de-contato">
+            <h1>Rafting Aventuras</h1>
+            <div class="detalhes-da-empresa">
+                <address>
+                    Rua das Aventuras, 123<br>
+                    Rio de Janeiro, RJ 22222-2222<br>
+                    Telefone: (21) 99999-9999<br>
+                    Email: <a href="mailto:contato@raftingaventuras.com">contato@raftingaventuras.com</a>
+                </address>
+            </div>
+        </section>
+
+        <section class="layout-de-contato">
+            <div class="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6833.540535306159!2d-43.42765047164876!3d-22.92824784371409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdeef2bf29faf%3A0xb252f3e6c15a91fd!2sS%C3%ADtio%20Encantado!5e0!3m2!1spt-BR!2sbr!4v1780368041996!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    <title>Sítio Encantado</title>
+                </iframe>
+            </div>
+
+            <div class="formulario-de-contato">
+                <form class="formulario" method="get" action="obrigado.html">
+                    <div class="campo-nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+                    </div>
+                    <div class="campo-email">
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" id="e-mail" name="e-mail" placeholder="Digite aqui" required>
+                    </div>
+                    <div class="campo-radio">
+                        <span class="label-proposito">Propósito da Mensagem</span>
+                        <div class="opcoes-radio">
+                            <label>
+                                <input type="radio" name="proposito" value="duvida-geral" checked>
+                                Dúvida Geral
+                            </label>
+                            <label>
+                                <input type="radio" name="proposito" value="pergunta-reserva">
+                                Pergunta sobre Reserva
+                            </label>
+                            <label>
+                                <input type="radio" name="proposito" value="sugestao">
+                                Sugestão
+                            </label>
+                        </div>
+                    </div>
+                    <div class="campo-mensagem">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite aqui" required></textarea>
+                    </div>
+                    <div class="campo-checkbox">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="sim">
+                            Por favor, me inscreva na newsletter mensal
+                        </label>
+                    </div>
+                    <button type="submit">Entrar em Contato!</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="equipe-de-contato">
+            <h2>Estamos Aqui Para Servi-lo</h2>
+            <div class="perfis-de-contato">
+                <figure>
+                    <img src="imagens/cintia.jpg" alt="Cintia Ferreira, guia de rafting">
+                    <figcaption>Cintia Ferreira<br><span>Guia de Rafting</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/marcelo.jpg" alt="Marcelo Silva, guia de rafting">
+                    <figcaption>Marcelo Silva<br><span>Guia de Rafting</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/joao.jpg" alt="João da Silva, guia de rafting">
+                    <figcaption>João da Silva<br><span>Guia de Rafting</span></figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2026 Rafting Aventuras | Daniel Dias Wolff</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="imagens/facebook.png" alt="Facebook Rafting Aventuras">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="imagens/linkedin.png" alt="Rafting Aventuras">
+            </a>
+            <a href="https://instagram.com">
+                <img src="imagens/instagram.png" alt="Rafting Aventuras">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
