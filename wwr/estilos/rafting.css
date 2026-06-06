@@ -598,10 +598,10 @@ footer p {
     background-color: var(--cor-branco);
 }
 
-.botao-passeios:hover,
-.botao-passeios:focus-visible,
-.botao-contato:hover,
-.botao-contato:focus-visible {
+.chamada-acao .botao-passeios:hover,
+.chamada-acao .botao-passeios:focus-visible,
+.chamada-acao .botao-contato:hover,
+.chamada-acao .botao-contato:focus-visible {
     background-color: var(--cor-destaque1);
     border-color: var(--cor-branco);
     color: var(--cor-branco);
