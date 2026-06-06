@@ -3,6 +3,7 @@
     --cor-secundaria: #e9c46a;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
+    --cor-texto-ouro: #1a1a1a;
     --cor-branco: #ffffff;
     --font-titulo: "Times New Roman", "Georgia", serif;
     --font-body: Aria, Heveltica, sans-serif;
@@ -67,8 +68,6 @@ header nav a {
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
-    color: var(--cor-destaque1);
-    background-color: #fff;
     border-right: 1px solid var(--cor-destaque1);
 }
 
@@ -76,10 +75,19 @@ header nav a:last-child {
     border-right: none;
 }
 
+header nav a:link,
+header nav a:visited {
+    color: var(--cor-texto-ouro);
+    background-color: var(--cor-branco);
+}
+
 header nav a:hover,
-header nav a:focus-visible {
-    background-color: var(--cor-destaque2);
-    color: var(--cor-destaque1);
+header nav a:focus,
+header nav a:focus-visible,
+header nav a:active {
+    color: var(--cor-texto-ouro);
+    background-color: var(--cor-branco);
+    box-shadow: inset 0 0 0 3px var(--cor-destaque1);
 }
 
 .redes-sociais {
@@ -139,13 +147,13 @@ header nav a:focus-visible {
     margin: 0;
     padding: 16px;
     background-color: var(--cor-secundaria);
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
 }
 
 .hero article p {
     margin: 0;
     padding: 0;
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
 }
 
 .titulo-artigo-hero {
@@ -153,7 +161,7 @@ header nav a:focus-visible {
     text-align: left;
     margin: 0 0 8px;
     padding: 0;
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
 }
 
 .galeria-de-aventuras {
@@ -312,6 +320,10 @@ footer p {
     padding: 0;
 }
 
+.newsletter .formulario label {
+    color: var(--cor-texto-ouro);
+}
+
 .formulario label,
 .formulario .label-proposito {
     color: var(--cor-destaque1);
@@ -406,8 +418,8 @@ footer p {
 
 .formulario button:hover,
 .formulario button:focus-visible {
-    background-color: var(--cor-destaque1);
-    color: var(--cor-branco);
+    background-color: #d0d0d0;
+    color: var(--cor-texto-ouro);
 }
 
 .equipe-de-contato {
@@ -583,6 +595,7 @@ footer p {
 .chamada-acao .botao-contato:link,
 .chamada-acao .botao-contato:visited {
     color: var(--cor-destaque1);
+    background-color: var(--cor-branco);
 }
 
 .botao-passeios:hover,
@@ -604,12 +617,12 @@ footer p {
     border: 1px solid #333;
     border-radius: 8px;
     align-items: start;
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
 }
 
 .newsletter-texto h2,
 .newsletter-texto p {
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
 }
 
 .newsletter-texto h2 {
@@ -639,6 +652,20 @@ footer p {
     margin-top: 8px;
 }
 
+.intro-passeios,
+.equipamentos-passeios,
+.newsletter,
+.hero article {
+    color: var(--cor-texto-ouro);
+}
+
+.intro-passeios :is(h1, h2, h3, p, figcaption, li),
+.equipamentos-passeios :is(h2, h3, p, li, figcaption),
+.newsletter :is(h2, p, label),
+.hero article :is(h2, p) {
+    color: var(--cor-texto-ouro);
+}
+
 .intro-passeios {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -652,21 +679,21 @@ footer p {
     background-color: var(--cor-secundaria);
     border: 1px solid #333;
     border-radius: 8px;
-    color: var(--cor-destaque1);
 }
 
 .intro-passeios .intro-titulo-pagina,
 .intro-passeios p,
 .intro-passeios figcaption {
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
 }
 
-.intro-passeios .intro-titulo-pagina {
+.intro-passeios h1.intro-titulo-pagina {
     grid-area: titulo;
     margin: 0;
     padding: 0;
     font-size: 2em;
     text-align: left;
+    color: var(--cor-texto-ouro);
 }
 
 .intro-passeios .intro-texto {
@@ -708,7 +735,7 @@ footer p {
 .intro-passeios figcaption {
     margin-top: 10px;
     font-weight: bold;
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
     font-size: 0.9em;
 }
 
@@ -896,7 +923,7 @@ footer p {
     background-color: var(--cor-secundaria);
     border: 1px solid #333;
     border-radius: 8px;
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
 }
 
 .equipamentos-passeios h2,
@@ -904,7 +931,7 @@ footer p {
 .equipamentos-passeios p,
 .equipamentos-passeios li,
 .equipamentos-passeios figcaption {
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
 }
 
 .equipamentos-imagem {
@@ -924,7 +951,7 @@ footer p {
     margin-top: 10px;
     font-size: 0.85em;
     font-weight: bold;
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
 }
 
 .equipamentos-conteudo {
@@ -937,7 +964,7 @@ footer p {
     padding: 0;
     font-size: 1.35rem;
     text-align: left;
-    color: var(--cor-destaque1);
+    color: var(--cor-texto-ouro);
     font-family: var(--font-titulo);
 }
 
