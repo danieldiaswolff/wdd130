@@ -1,6 +1,6 @@
 :root {
     --cor-primaria: #055a05;
-    --cor-secundaria: #E9C46AE6;
+    --cor-secundaria: #e9c46a;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
     --cor-branco: #ffffff;
@@ -43,7 +43,7 @@ header img {
 h1,
 h2 {
     font-family: var(--font-titulo);
-    color: var(--cor-primaria);
+    color: var(--cor-destaque1);
     text-align: center;
 }
 
@@ -78,6 +78,7 @@ header nav a:last-child {
 
 header nav a:hover {
     background-color: var(--cor-destaque2);
+    color: var(--cor-destaque1);
 }
 
 .redes-sociais {
@@ -115,9 +116,8 @@ header nav a:hover {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
     background-color: var(--cor-destaque1);
-    color: #fff;
+    color: var(--cor-branco);
 }
 
 .hero article img {
@@ -130,14 +130,24 @@ header nav a:hover {
     bottom: 20px;
     left: 20px;
     right: 20px;
+    margin: 0;
+    padding: 16px;
     background-color: var(--cor-secundaria);
+    color: var(--cor-destaque1);
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+    color: var(--cor-destaque1);
 }
 
 .titulo-artigo-hero {
     font-size: 1.2rem;
     text-align: left;
-    margin-bottom: 8px;
-    color: var(--cor-primaria);
+    margin: 0 0 8px;
+    padding: 0;
+    color: var(--cor-destaque1);
 }
 
 .galeria-de-aventuras {
@@ -162,7 +172,7 @@ header nav a:hover {
 .galeria-de-aventuras figcaption {
     margin-top: 8px;
     font-size: 0.8em;
-    color: var(--cor-primaria);
+    color: var(--cor-destaque1);
     font-weight: bold;
 }
 
@@ -171,7 +181,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: var(--cor-primaria);
-    color: var(--cor-destaque2);
+    color: var(--cor-branco);
     padding: 0.5rem;
 }
 
@@ -179,6 +189,11 @@ footer p {
     flex: 1;
     margin: 0;
     text-align: center;
+}
+
+.historia h2,
+.aventuras h2 {
+    color: var(--cor-destaque1);
 }
 
 .historia {
@@ -356,7 +371,7 @@ footer p {
 
 .formulario input::placeholder,
 .formulario textarea::placeholder {
-    color: #767676;
+    color: #595959;
 }
 
 .formulario button {
@@ -494,7 +509,7 @@ footer p {
 .destaques-inicio figcaption {
     margin-top: 10px;
     font-weight: bold;
-    color: var(--cor-primaria);
+    color: var(--cor-destaque1);
     font-size: 0.9em;
 }
 
@@ -506,12 +521,16 @@ footer p {
     margin: 30px 0;
     padding: 30px;
     background-color: var(--cor-destaque1);
-    color: var(--cor-branco);
+    color: var(--cor-destaque1);
     border-radius: 8px;
 }
 
+.chamada-acao h2,
+.chamada-acao p {
+    color: var(--cor-branco);
+}
+
 .chamada-acao h2 {
-    color: var(--cor-destaque2);
     text-align: left;
     margin-bottom: 10px;
     font-size: 1.6rem;
@@ -524,22 +543,26 @@ footer p {
     text-align: left;
 }
 
-.botao-passeios {
+.botao-passeios,
+.botao-contato {
     display: inline-block;
     padding: 14px 28px;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-branco);
     color: var(--cor-destaque1);
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    border: 2px solid var(--cor-destaque2);
+    border: 2px solid var(--cor-branco);
     border-radius: 6px;
     justify-self: end;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.botao-passeios:hover {
-    background-color: var(--cor-destaque2);
+.botao-passeios:hover,
+.botao-contato:hover {
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-destaque1);
+    color: var(--cor-destaque1);
 }
 
 .newsletter {
@@ -552,6 +575,12 @@ footer p {
     border: 1px solid #333;
     border-radius: 8px;
     align-items: start;
+    color: var(--cor-destaque1);
+}
+
+.newsletter-texto h2,
+.newsletter-texto p {
+    color: var(--cor-destaque1);
 }
 
 .newsletter-texto h2 {
@@ -594,6 +623,13 @@ footer p {
     background-color: var(--cor-secundaria);
     border: 1px solid #333;
     border-radius: 8px;
+    color: var(--cor-destaque1);
+}
+
+.intro-passeios .intro-titulo-pagina,
+.intro-passeios p,
+.intro-passeios figcaption {
+    color: var(--cor-destaque1);
 }
 
 .intro-passeios .intro-titulo-pagina {
@@ -643,7 +679,7 @@ footer p {
 .intro-passeios figcaption {
     margin-top: 10px;
     font-weight: bold;
-    color: var(--cor-primaria);
+    color: var(--cor-destaque1);
     font-size: 0.9em;
 }
 
@@ -671,11 +707,23 @@ footer p {
     font-size: 1.6rem;
 }
 
-.passeios-detalhados .passeio-texto,
 .passeios-detalhados .passeio-imagem {
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+.passeios-detalhados .passeio-texto {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: var(--cor-destaque1);
+}
+
+.passeios-detalhados .passeio-texto p,
+.passeios-detalhados .passeio-texto li,
+.passeios-detalhados .passeio-texto strong {
+    color: var(--cor-destaque1);
 }
 
 .passeios-detalhados .passeio-texto:nth-of-type(1) {
@@ -706,7 +754,7 @@ footer p {
     text-align: left;
     margin-bottom: 12px;
     font-size: 1.4rem;
-    color: var(--cor-primaria);
+    color: var(--cor-destaque1);
     font-family: var(--font-titulo);
 }
 
@@ -741,7 +789,7 @@ footer p {
 .passeios-detalhados figcaption {
     margin-top: 10px;
     font-weight: bold;
-    color: var(--cor-primaria);
+    color: var(--cor-destaque1);
     font-size: 0.9em;
 }
 
@@ -806,7 +854,7 @@ footer p {
 }
 
 .comparativo-passeios tbody tr:hover {
-    background-color: var(--cor-secundaria);
+    background-color: #ece8dc;
 }
 
 .equipamentos-passeios {
@@ -819,6 +867,15 @@ footer p {
     background-color: var(--cor-secundaria);
     border: 1px solid #333;
     border-radius: 8px;
+    color: var(--cor-destaque1);
+}
+
+.equipamentos-passeios h2,
+.equipamentos-passeios h3,
+.equipamentos-passeios p,
+.equipamentos-passeios li,
+.equipamentos-passeios figcaption {
+    color: var(--cor-destaque1);
 }
 
 .equipamentos-imagem {
@@ -838,7 +895,7 @@ footer p {
     margin-top: 10px;
     font-size: 0.85em;
     font-weight: bold;
-    color: var(--cor-primaria);
+    color: var(--cor-destaque1);
 }
 
 .equipamentos-conteudo {
@@ -851,7 +908,7 @@ footer p {
     padding: 0;
     font-size: 1.35rem;
     text-align: left;
-    color: var(--cor-primaria);
+    color: var(--cor-destaque1);
     font-family: var(--font-titulo);
 }
 
@@ -874,25 +931,8 @@ footer p {
 .lista-equipamentos li {
     padding: 8px 12px;
     background-color: var(--cor-branco);
-    border-left: 4px solid var(--cor-primaria);
+    border-left: 4px solid var(--cor-destaque1);
     font-size: 0.95em;
     text-align: left;
-}
-
-.botao-contato {
-    display: inline-block;
-    padding: 14px 28px;
-    background-color: var(--cor-secundaria);
     color: var(--cor-destaque1);
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    border: 2px solid var(--cor-destaque2);
-    border-radius: 6px;
-    justify-self: end;
-    transition: background-color 0.2s ease;
-}
-
-.botao-contato:hover {
-    background-color: var(--cor-destaque2);
 }
