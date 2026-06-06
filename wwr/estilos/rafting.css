@@ -295,23 +295,14 @@ footer p {
 .mapa-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    width: 100%;
 }
 
-.mapa-container a {
-    display: block;
-    max-width: 400px;
-}
-
-.mapa-container a:link,
-.mapa-container a:visited {
-    color: var(--cor-destaque1);
-}
-
-.mapa-container img {
+.mapa-container iframe {
     display: block;
     width: 100%;
-    height: auto;
+    height: 450px;
     border: 2px solid var(--cor-destaque1);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
