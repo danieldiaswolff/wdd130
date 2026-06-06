@@ -76,7 +76,8 @@ header nav a:last-child {
     border-right: none;
 }
 
-header nav a:hover {
+header nav a:hover,
+header nav a:focus-visible {
     background-color: var(--cor-destaque2);
     color: var(--cor-destaque1);
 }
@@ -91,6 +92,11 @@ header nav a:hover {
 .redes-sociais a {
     text-decoration: none;
     display: block;
+}
+
+.redes-sociais a:link,
+.redes-sociais a:visited {
+    color: var(--cor-branco);
 }
 
 .redes-sociais img {
@@ -249,7 +255,8 @@ footer p {
     font-size: 1em;
 }
 
-.detalhes-da-empresa a {
+.detalhes-da-empresa a:link,
+.detalhes-da-empresa a:visited {
     color: var(--cor-destaque1);
     text-decoration: none;
 }
@@ -291,8 +298,20 @@ footer p {
     align-items: center;
 }
 
-.mapa-container iframe {
+.mapa-container a {
+    display: block;
     max-width: 400px;
+}
+
+.mapa-container a:link,
+.mapa-container a:visited {
+    color: var(--cor-destaque1);
+}
+
+.mapa-container img {
+    display: block;
+    width: 100%;
+    height: auto;
     border: 2px solid var(--cor-destaque1);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -300,6 +319,17 @@ footer p {
 
 .formulario-de-contato {
     padding: 0;
+}
+
+.formulario label,
+.formulario .label-proposito {
+    color: var(--cor-destaque1);
+    font-weight: bold;
+}
+
+.formulario .opcoes-radio label,
+.formulario .campo-checkbox label {
+    font-weight: normal;
 }
 
 .formulario .campo-nome, .formulario .campo-email {
@@ -339,7 +369,6 @@ footer p {
 .formulario .campo-mensagem label {
     display: block;
     margin-bottom: 8px;
-    color: var(--cor-destaque1);
 }
 
 .formulario .campo-checkbox {
@@ -350,7 +379,6 @@ footer p {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--cor-destaque1);
 }
 
 .formulario input[type="text"],
@@ -385,8 +413,10 @@ footer p {
     cursor: pointer;
 }
 
-.formulario button:hover {
-    background-color: #d0d0d0;
+.formulario button:hover,
+.formulario button:focus-visible {
+    background-color: var(--cor-destaque1);
+    color: var(--cor-branco);
 }
 
 .equipe-de-contato {
@@ -521,7 +551,6 @@ footer p {
     margin: 30px 0;
     padding: 30px;
     background-color: var(--cor-destaque1);
-    color: var(--cor-destaque1);
     border-radius: 8px;
 }
 
@@ -558,11 +587,20 @@ footer p {
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.botao-passeios:hover,
-.botao-contato:hover {
-    background-color: var(--cor-secundaria);
-    border-color: var(--cor-destaque1);
+.chamada-acao .botao-passeios:link,
+.chamada-acao .botao-passeios:visited,
+.chamada-acao .botao-contato:link,
+.chamada-acao .botao-contato:visited {
     color: var(--cor-destaque1);
+}
+
+.botao-passeios:hover,
+.botao-passeios:focus-visible,
+.botao-contato:hover,
+.botao-contato:focus-visible {
+    background-color: var(--cor-destaque1);
+    border-color: var(--cor-branco);
+    color: var(--cor-branco);
 }
 
 .newsletter {
